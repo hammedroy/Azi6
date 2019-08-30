@@ -1,0 +1,41 @@
+<?
+$email=$_POST['email'];
+$Fstnm=$_POST['Fstnm'];
+$Lstnm=$_POST['Lstnm'];
+$add=$_POST['add'];
+$city=$_POST['cty'];
+$phn=$_POST['phn'];
+$qty=$_POST['qty'];
+//$website=$_POST['url'];
+//$comment=$_POST['comment'];
+    
+    $body .= "Email: " . $email . "\n";
+	$body .= "First Name: " . $Fstnm . "\n"; 
+    $body .= "Last Name: " . $Lstnm . "\n";
+    $body .= "Address: " . $add . "\n";
+    $body .= "City: " . $cty . "\n";
+	$body .= "Phone Number: " . $phn . "\n";
+	$body .= "Quantity: " . $qty . "\n";
+	
+//    $body .= "Website: " . $website . "\n"; 
+ //   $body .= "Comment:  " . $comment . "\n"; 
+	 
+	 if(!empty($_POST['slct'])){
+// Loop to store and display values of individual checked checkbox.
+		foreach($_POST['slct'] as $selected){
+		$body .= "slct:  " . $selected . "\n";
+		}
+	} */
+    //replace with your email
+    //mail("salaamazeez1@gmail.com","New email",$body); 
+	mail("royabathammed@gmail.com",$email,$body); 
+  
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>alert("Your message has been sent successfully. We will contact you shortly.");</script>
+<meta HTTP-EQUIV="REFRESH" content="0; url=index.html"> 
+
+</head>+
